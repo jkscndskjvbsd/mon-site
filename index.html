@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title> portefolio Amjad </title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet"href="code-css.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  </head>
+  <body>
+    <div id="entete-de-page">
+      <p>PORTEFOLIO Amjad</p>
+    </div>
+    <table id="bloc-menu" border="1">
+      <tbody>
+            <tr>
+          <th><a href="index.html">Accueil</a></th>
+          <th><a href="page_1.html">Mes productions écrites</a></th>
+          <th><a href="page_2.html">Mes vidéos</a></th>
+          <th><a href="page_3.html">Mes passions</a></th>
+          <th><a href="page_4.html">Mon site de rêve</a></th>
+          <th><a href="page_5.html">Mes sites préférés</a></th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <div id="contenu">
+      <h1> Accueil </h1>
+      <img src="avatar.png" alt="Mon_avatar" width="180">
+      <h2>Bienvenue ! ceci est mon portefolio, Je partage avec<br>
+       vous sur ce site qui a pour but de presenter<br>
+       mes productions écrites, presenter mes vidéos,<br>
+        mes passions, de montrer un apercu de mon site de rêve<br>
+        et de presenter mes sites préférés </h2>
+      <p><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>mais avant cela, un peut de musique ?</h2>
+        voici une musique simple et sans paroles mais qui a pourtant suscité enormément de <br>
+        nostalgie sur internet du au fait que la musique soit libre de droit et que tout le monde<br>
+         ait commencé a l'utiliser, la vidéo cumule plus de 250 millions de vues
+      </p>
+	  <audio  id="zic"src="ncs.m4a"></audio>
+      <br>
+	  <div>
+<a href="javascript:void(0)" onclick="changeState(0)" class="bouton">PLAY</a>
+<a href="javascript:void(0)" onclick="changeState(1)" class="bouton">PAUSE</a>
+<a href="javascript:void(0)" onclick="changeState(2)" class="bouton active">STOP</a>
+      <br>
+	 <script>
+	 function changeState(x){
+let boutons = document.querySelectorAll(".bouton");
+let audio = document.querySelector("#zic");
+for(let i =0; i<boutons.length; i++){
+boutons[i].classList.remove("active");
+}
+boutons[x].classList.add("active");
+if(x == 0){
+audio.play();
+}
+if(x == 1){
+audio.pause();
+}
+if(x == 2){
+audio.pause();
+audio.currentTime = 0;
+}
+}
+</script>
+	 
+      <hr>
+      <div id="infos">
+        <h3> A lire aussi: </h3>
+        <ul>
+          <li><a href= "file:///C:/Users/mon-pc/Desktop/amjad/AMJAD/site%20web/index.html" target="_blank"> mon site de rêve </a></li>
+          <li><a href= "https://www.google.com/search?sca_esv=e3fc598d921f3540&sxsrf=AHTn8zpb35LiaF71G-Z24op_pjQQS5gFpQ:1741558414684&q=portfolio&source=lnms&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBteutRhCIwSdaS7of3GY5DSBTK2sWFDm60bkTR4-igG_n_JPcquZUB03W3dG250C4slvHCO7yG8xcBpXuA1ztoIh7_Z8Rq9QJJXtfaEacKOMfxq06kb2vU_jNejPGVJRWvcYBY44EMdl3ipTSkFdfH9qltPdzExuf_rlkt_qwj7kOeVUIw&sa=X&ved=2ahUKEwj0xKbVgv6LAxUdVqQEHb9hO24Q0pQJegQIFBAB&biw=1707&bih=758&dpr=0.8" target="_blank"> portefolio</a></li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <div id="pied-de-page" width="520">
+	
+    <img src="instagram.png" alt="instagram" border="0" width="60"
+  <p><a href ="https://www.instagram.com/" target="_blank"><h1>Instagram</h1></a>
+   </div>
+  </body>
+</html>
