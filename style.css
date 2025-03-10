@@ -2,78 +2,104 @@ body, div {
 	margin: 0;
 	padding: 0;
 }
+
+/* Style général du corps de la page */
 body {
-	background-color:  #1E2727;
-	font-family: Arial, sans-serif;
-	font-size: 16px;
+	background-color:  #1E2727; /* Couleur de fond sombre */
+	font-family: Arial, sans-serif; /* Police de caractères principale */
+	font-size: 16px; /* Taille du texte par défaut */
 }
+
+/* Style des images */
 img { 
-	float: left; 
-	margin-right: 20px;
+	float: left; /* Les images flottent à gauche du texte */
+	margin-right: 20px; /* Marge à droite pour espacer l'image du texte */
 }
-th { width: 200px;}
-ul { list-style-type: square; }
 
+/* Définition de la largeur des cellules d'en-tête des tableaux */
+th { 
+	width: 200px;
+}
+
+/* Style des listes non ordonnées */
+ul { 
+	list-style-type: square; /* Utilise des carrés comme puces */
+}
+
+/* En-tête de la page */
 #entete-de-page {
-	padding: 5px;
-	height: 100px;
-	background-color:  #3F9692;
-	font-size: 32px;
-	font-weight: bold;
-	font-variant: small-caps;
-	text-align: center;
+	padding: 5px; /* Espacement intérieur */
+	height: 100px; /* Hauteur fixe de l'en-tête */
+	background-color:  #3F9692; /* Couleur de fond */
+	font-size: 32px; /* Taille du texte */
+	font-weight: bold; /* Texte en gras */
+	font-variant: small-caps; /* Texte en petites majuscules */
+	text-align: center; /* Centrage du texte */
 }
 
+/* Bloc avec l'ID "P3" */
 #P3 {
-    width: 180; /* S'adapte à la largeur de la page */
-    height: auto;
-    border: 2px solid #5DE2E7;
-    border-radius: 20px;
-    margin-top: 20px;
+    width: 180; /* !! Erreur : unité manquante, devrait être "width: 180px;" */
+    height: auto; /* Hauteur ajustable automatiquement */
+    border: 2px solid #5DE2E7; /* Bordure bleue */
+    border-radius: 20px; /* Coins arrondis */
+    margin-top: 20px; /* Marge supérieure */
 }
 
+/* Menu principal */
 #bloc-menu {
-	height: 36px;
-	background-color:   #01F6D1;
-	float: center;
-	color: white;
+	height: 36px; /* Hauteur du menu */
+	background-color: #01F6D1; /* Couleur de fond cyan */
+	float: center; /* !! Erreur : "float: center;" n'est pas une valeur valide */
+	color: white; /* Couleur du texte */
 }
+
+/* Contenu principal */
 #contenu {
-	padding: 10px;
-	background-color:   #2D5D5A;
+	padding: 10px; /* Espacement intérieur */
+	background-color: #2D5D5A; /* Couleur de fond */
 }
+
+/* Informations affichées en italique */
 #infos {
-	color: darkblue;
-	font-style: italic;
+	color: darkblue; /* Couleur du texte en bleu foncé */
+	font-style: italic; /* Texte en italique */
 }
+
+/* Pied de page */
 #pied-de-page {
-	padding: 5px;
-	background-color:  #01F6D1;
-	font-size: 11px;
+	padding: 5px; /* Espacement intérieur */
+	background-color: #01F6D1; /* Couleur de fond */
+	font-size: 11px; /* Petite taille de police */
 }
 
-/*créer des commandes pour lancer /arrêter de la musique*/
+/* Style des boutons pour contrôler la musique */
 .bouton {
-	display:block;
-	text-align:center;
-	text-decoration:none;
-	font-weight: 500;
-	color:#753C3D;
-	font-size:4rem;
-	line-height:2em;
+	display: block; /* Affichage en bloc */
+	text-align: center; /* Centrage du texte */
+	text-decoration: none; /* Suppression du soulignement */
+	font-weight: 500; /* Poids du texte */
+	color: #753C3D; /* Couleur du texte */
+	font-size: 4rem; /* Taille du texte (très grand) */
+	line-height: 2em; /* Espacement vertical du texte */
 }
 
+/* Style d'un bouton actif */
 .bouton.active {
-Color:#08c5f3;
+	color: #08c5f3; 
 }
+
+/* Liens non visités */
 a:link {
-  color: #f90aea;
+	color: #f90aea; /* Couleur rose vif */
 }
 
+/* Liens au survol */
 a:hover {
-  color: #eee;
+	color: #eee; /* Couleur gris clair */
 }
 
-a visited {
-	color: #000;
+/* Liens visités */
+a visited { /* !! Erreur de syntaxe : devrait être "a:visited" */
+	color: #000; /* Couleur noire */
 }
